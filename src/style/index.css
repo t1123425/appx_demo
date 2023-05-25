@@ -1,20 +1,39 @@
 
 :root{
-  --mainBg:#F2F2F7;
-  --lightBlack:#11263C;
+  --mainBgColor:#F2F2F7;
+  --textLightBlack:#11263C;
+  --textBlueGray:#737791;
   --white:#FFFFFF;
+  --selectorBorder:#F2F2F7;
+  --selectorBorderGray:#737791;
 }
 @font-face {
   font-family:'poppins';
   src: url('../assets/fontsFace/Poppins-Regular.ttf');
 }
 body,html{
-  background-color: var(--mainBg);
+  background-color: var(--mainBgColor);
+  height:100vh;
 }
 body {
   font-family: poppins, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    color: var(--lightBlack);
+    color: var(--textLightBlack);
 }
-
+#root{
+  height: 100%;
+}
+.whiteBg{
+  background-color: var(--white);
+}
+.gridContent{
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+  "header header"
+  "sidebar main"
+  "sidebar main";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 103px 1fr;
+}

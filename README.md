@@ -1,6 +1,6 @@
 # appx_demo
 這是用來展示切版範本的repo
-[範本UI設計稿](https://www.figma.com/file/lfWgSbcNaUqRI9HmWktBzp/230215-(Copy)?type=design&node-id=2-639&t=ALoONFkR345BkkKP-0)
+[範本UI設計稿](https://www.figma.com/file/lfWgSbcNaUqRI9HmWktBzp/230215-(Copy)?type=design&node-id=2-639&t=MWLNKEr3U1cMP7le-0)
 
 # 本地測試指南
 

@@ -1,0 +1,15 @@
+.Selector{
+    border:0;
+    padding: 10.5px 16px;
+    color: inherit;
+    border: 1px solid var(--selectorBorder);
+    border-radius: 8px;
+    &.grayBorder{
+        background-color: var(--white);
+        border-color: var(--selectorBorderGray);
+    }
+    &.lightText{
+        color:var(--textBlueGray);
+    }
+
+}

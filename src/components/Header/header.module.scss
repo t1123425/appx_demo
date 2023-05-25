@@ -1,5 +1,26 @@
+.header{
+    grid-area: header;
+}
 .headerContainer{
     display:flex;
+    align-items: center;
     width:100%;
     padding: 33px 25px;
+    .menuBtn{
+        display: inline-block;
+        width:32px;
+        height:32px;
+        background-image: url('../../assets/img/menuBar.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20.56px 16px;
+        margin-right:19px;
+    }
+    .logo{
+        width:100%;
+        max-width:164px;
+    }
+    @media (max-width: 1024px) {
+        background-color: var(--white);
+    }
 }

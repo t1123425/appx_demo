@@ -1,0 +1,25 @@
+.sidebar{
+    grid-area: sidebar;
+    width: 106px;
+    transition: all 1s;
+    &.active{
+        width:294px;
+    }
+    .dropDownList{
+        width: 100%;
+       .listInfo{
+         width: 100%;
+         display:flex;
+         align-items: center;
+         &:after{
+            content:"";
+            display:inline-block;
+            width: 10px;
+            height:10px;
+            background-image: url('../../assets/img/arrowDown.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+       }
+    }
+}
