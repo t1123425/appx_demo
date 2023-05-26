@@ -7,10 +7,26 @@
     }
     .dropDownList{
         width: 100%;
+        li{
+            // max-height: 57px;
+            overflow: hidden;
+            &.active{
+                max-height: auto;
+                .listInfo{
+                    background-color:var(--sideBarActive);
+                }
+            }
+        }
        .listInfo{
          width: 100%;
          display:flex;
          align-items: center;
+         justify-content: space-between;
+         padding: 18px 18px 18px 30px;
+         cursor: pointer;
+         &:hover{
+            background-color:var(--sideBarActive);
+         }
          &:after{
             content:"";
             display:inline-block;
@@ -21,5 +37,15 @@
             background-repeat: no-repeat;
         }
        }
+       .infoBox{
+         display: flex;
+         gap:0 13px;
+         align-items: flex-start;
+         span{
+            display:inline-block;
+            max-width: 185px;
+            font-weight: 600;
+         }
+        }
     }
 }
