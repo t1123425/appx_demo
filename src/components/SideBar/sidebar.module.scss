@@ -1,12 +1,15 @@
+$maxWidth:294px;
 .sidebar{
     grid-area: sidebar;
-    width: 106px;
+    width: 100%;
+    overflow: hidden;
     transition: all 1s;
+    max-width: 60px;
     &.active{
-        width:294px;
+        max-width: $maxWidth;
     }
     .dropDownList{
-        width: 100%;
+        width:$maxWidth;
         li{
             // max-height: 57px;
             overflow: hidden;

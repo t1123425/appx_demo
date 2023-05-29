@@ -38,3 +38,7 @@ body {
   grid-template-columns: auto 1fr;
   grid-template-rows: 103px 1fr;
 }
+.flexCenter{
+  display: flex;
+  align-items: center;
+}

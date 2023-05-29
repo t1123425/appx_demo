@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState,useContext} from 'react';
+import { AppContext } from '../../context/appContext';
 import styles from './sidebar.module.scss'
 import homeIcon from '../../assets/img/homeIcon.svg';
 import marketIcon from '../../assets/img/marketIcon.svg';
@@ -6,8 +7,8 @@ import customIcon from '../../assets/img/customerIcon.svg';
 import carrierIcon from '../../assets/img/carrierIcon.svg';
 import financeIcon from '../../assets/img/calcularIcon.svg';
 import userIcon from '../../assets/img/userIcon.svg';
-
 const SiderBar = () => {
+    const {toggle} = useContext(AppContext);
     const listData = [
         {
             text:'Home General',
@@ -42,7 +43,7 @@ const SiderBar = () => {
     ]
     const [ListsData,setListData] = useState(listData);
     return (
-        <nav className={styles.sidebar+' '+styles.active}>
+        <nav className={styles.sidebar+' '+(toggle?styles.active:'')}>
             <ul className={styles.dropDownList}>
                 {
                     ListsData.map((e,i)=>{

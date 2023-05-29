@@ -15,6 +15,7 @@
         background-repeat: no-repeat;
         background-size: 20.56px 16px;
         margin-right:19px;
+        cursor: pointer;
     }
     .logo{
         width:100%;
@@ -23,4 +24,25 @@
     @media (max-width: 1024px) {
         background-color: var(--white);
     }
+}
+.userBlock{
+    justify-content: space-between;
+    gap:53px;
+    .userAvatar{
+        width:50px;
+        height:50px;
+        border-radius: 25%;
+        overflow: hidden;
+        img{
+            width:100%
+        }
+    }
+}
+.weatherBlock{
+    span{
+        font-weight: 600;
+    }
+}
+.searchBlock{
+    gap:8px;
 }
