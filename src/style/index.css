@@ -28,6 +28,15 @@ body {
 .whiteBg{
   background-color: var(--white);
 }
+.b-30{
+  width:30%;
+}
+.b-70{
+  width: 70%;
+}
+.b-50{
+  width:50%;
+}
 .gridContent{
   display: grid;
   height: 100%;

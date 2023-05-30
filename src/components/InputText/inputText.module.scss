@@ -3,7 +3,25 @@
     padding: 10.5px 16px;
     border: 1px solid var(--selectorBorder);
     border-radius: 6px;
+    background-color: var(--white);
+    &.grayBorder{
+        border-color: var(--selectorBorderGray);
+    }
     input{
         border:0;
+        line-height: 27px;
+        width: calc(100% - 30px);
+        &::placeholder{
+            color:var(--textBlueGray);
+        }
+    }
+    span{
+        display: inline-block;
+        width: 30px;
+        padding-left: 10px;
+        border-left: 1px solid #000000;
+        img{
+            display: block;
+        }
     }
 }

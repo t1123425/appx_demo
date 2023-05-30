@@ -1,9 +1,13 @@
-.Selector{
-    border:0;
-    padding: 10.5px 16px;
-    color: inherit;
+.selectorWrap{
     border: 1px solid var(--selectorBorder);
     border-radius: 8px;
+    position: relative;
+    select{
+        border:0;
+        padding: 10.5px 16px;
+        color: inherit;
+        line-height: 27px;
+    }
     &.grayBorder{
         background-color: var(--white);
         border-color: var(--selectorBorderGray);
@@ -11,5 +15,22 @@
     &.lightText{
         color:var(--textBlueGray);
     }
-
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 8px;
+        bottom: 0;
+        top:0;
+        margin: auto;
+        width: 8px;
+        height:8px;
+        background-image: url('../../assets/img/arrowDown.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.selector{
+    
 }
