@@ -9,6 +9,7 @@
         margin-bottom: 13.34px;
         .collectionStatus{
             grid-area: a;
+            max-width: 13px;
         }
         p{
             grid-area: b;
@@ -25,10 +26,12 @@
             border-radius: 38px;
             background-color: var(--newsBg);
         }
+        
     }
     .itemStatus{
         flex-wrap: wrap;
         justify-content: space-between;
+        gap:14px;
         .itemList{
             gap: 25.48px;
             li{
@@ -43,4 +46,18 @@
             line-height: 18px;
         }
     }
+    @media screen and (max-width:1024px){
+        border:0;
+        border-bottom: 1px solid #E3E3E3;
+        .itemInfo{
+            grid-template-columns:13px 49px 1fr ;
+            grid-template-areas:
+            'a c'
+            'b b';
+            p{
+                grid-column: 1/ span 3;
+            }
+        }
+        
+      }
 }

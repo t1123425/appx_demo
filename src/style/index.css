@@ -55,7 +55,7 @@ body {
   "header header"
   "sidebar main"
   "sidebar main";
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(max-content, auto) 1fr;
   grid-template-rows: 103px 1fr;
 }
 .flexCenter{
@@ -64,5 +64,19 @@ body {
 }
 .flex1{
   flex:1;
+}
+.mobileShow{
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  /* .gridContent{
+     display: block;
+  } */
+  .mobileShow{
+      display: block;
+  }
+  .moblieHide{
+    display: none;
+  }
 }
 

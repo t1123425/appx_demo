@@ -10,8 +10,8 @@ const CollectionItem = ({id}) => {
                 <span className={styles.collectionStatus}>
                     <img src={collectionIcon} alt="collection" />
                 </span>
-                <p>APPX System New Version Release Announce on  14th Dec...</p>
                 <span className={styles.news}>News</span>
+                <p>APPX System New Version Release Announce on  14th Dec...</p>
             </div>
             <div className={styles.itemStatus+' flexCenter'}>
                 <ul className={styles.itemList+' flexCenter'}>

@@ -18,13 +18,16 @@ const Header = () => {
               <span className={styles.menuBtn} onClick={()=> {setToggle(toggle => !toggle)}}></span>
               <img src={appxLogo} className={styles.logo} alt="appx" /> 
             </div>
-            <div className={styles.infoBlock+' flexCenter flex1'}>
-              <div className={styles.searchBlock+' flexCenter'}>
+            <div className={styles.infoBlock+' flexCenter'}>
+              <div className={styles.searchBlock+' moblieHide flexCenter'}>
                   {/* 輸入框 */}
                   <InputText placeholder='Search here' 
                              styleType="grayBorder" 
                              className="flexCenter">
-                    <img src={searchIcon} alt="search" />
+                              {/* 若要icon呈現header的樣式圖片外層要添加span */}
+                              <span>
+                                <img src={searchIcon} alt="search" />
+                              </span>
                   </InputText>
                   {/* 
                     下拉式選單，選項包含：By All、By Station、By Country */}
@@ -33,7 +36,7 @@ const Header = () => {
                             className={styles.searchType} 
                             dataList={['By All','By Station','By Country']} />
               </div>
-              <div className={styles.weatherBlock+' '+styles.moblieHide+' flexCenter flex1'}>
+              <div className={styles.weatherBlock+' moblieHide flexCenter flex1'}>
                 <span className='flexCenter'>
                   <img src={weatherIcon} alt="weather"/>
                   <b>09:54 am</b>
@@ -42,11 +45,16 @@ const Header = () => {
   地區下拉選單選項包含：Antananarivo、Hongkong、Taipei、Tokyo */}
                 <Selector defaultValue="Antananarivo" dataList={['Antananarivo','Hongkong','Taipei','Tokyo']} />
               </div>
-              <div className={styles.userBlock+' flexCenter flex1'}>
+              <div className={styles.userBlock+' flexCenter'}>
+                 {/* 根據設計稿移動裝置版面出現的icon */}
+                 <span className="moblieShow">
+                  <img src={searchIcon} alt="search" />
+                </span>
                 <span>
                   <img src={settingIcon} alt="setting" />
                 </span>
-                <span className={styles.moblieHide}>
+                {/* 根據設計稿移動裝置版面隱藏的icon */}
+                <span className="moblieHide">
                   <img src={nofiIcon} alt="nofi" />
                 </span>
                 <div className={styles.userAvatar+' flexCenter'}>

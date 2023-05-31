@@ -4,13 +4,8 @@ const InputText = ({placeholder = '',styleType,className,children}) => {
         <div className={styles.inputTextWrap+' '+styles[styleType]+' '+className}>
              <input type="text" placeholder={placeholder} />
              {
-                children && (
-                 <span>
-                    {children}
-                </span>
-                )
+                children
              }
-             
         </div>
     )
 }

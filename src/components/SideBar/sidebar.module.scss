@@ -6,8 +6,20 @@ $maxWidth:294px;
     transition: all 1s;
     // 縮放前的最大寬度
     max-width: 108px;
+    @media screen and (max-width:1024px) {
+        max-width: 0;
+        height: 100%;
+        position: fixed;
+        left:0;
+        top:117px;
+        z-index: 1;
+        background-color: var(--mainBgColor);
+        &.active{
+            max-width:none;
+        }
+    }
     &.active{
-        max-width: $maxWidth;
+        max-width: 294px;
         .dropDownList{
             .listInfo{
                 width: 100%;

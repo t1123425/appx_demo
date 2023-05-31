@@ -8,7 +8,7 @@ const Collection = () => {
         <section className={styles.collectionWrap}>
             <div className={styles.collectionInfo +' flexCenter'}>
                 <h2 className={styles.title}>My Collection</h2>
-                <div className="pageInfo flexCenter">
+                <div className="pageInfo flexCenter moblieHide">
                     <span className={styles.title+' '+styles.total}>Total 480</span>
                     <div className={styles.pageSwitcher+' flexCenter'}>
                         <span>

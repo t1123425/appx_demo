@@ -1,4 +1,7 @@
 .Main{
     grid-area: main;
     padding-right:26px;
+    @media screen  and (max-width:1024px){
+        padding:0 16px;
+    }
 }

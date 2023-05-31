@@ -1,5 +1,10 @@
 .header{
     grid-area: header;
+    @media screen and (max-width:1024px){
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
 }
 .headerContainer{
     display:flex;
@@ -7,10 +12,7 @@
     width:100%;
     padding: 33px 25px;
     justify-content: space-between;
-    @media (max-width: 1024px) {
-        .moblieHide{
-            display: none;
-        }
+    @media screen and (max-width: 1024px) {
         background-color: var(--white);
     }
 }
@@ -32,15 +34,42 @@
         width:100%;
         max-width:164px;
     }
+    @media screen and (max-width: 1024px) {
+        .logo{
+            max-width:93px;
+        }
+    }
 }
 .infoBlock{
+    flex: 1;
     gap:5%;
+    @media screen and (max-width: 1024px) {
+        flex: none;
+    }
 }
 .infoBlock,.userBlock{
     justify-content: space-between;
 }
+.weatherBlock{
+    max-width: 295px;
+    flex-wrap: wrap;
+    span{
+        font-weight: 600;
+        font-size: 1.12em;
+        gap: 8px;
+    }
+}
+.searchBlock{
+    max-width: 354px;
+    gap:8px;
+    .searchType{
+        max-width: 101px;
+    }
+}
 .userBlock{
     max-width: 212px;
+    flex: auto;
+    gap: 24px;
     span{
       max-width:28px;
     }
@@ -60,24 +89,7 @@
     }
     img{
         max-width: 50px;
-        // width:50px;
         width:100%;
         border-radius: 25%;
-    }
-}
-.weatherBlock{
-    max-width: 295px;
-    flex-wrap: wrap;
-    span{
-        font-weight: 600;
-        font-size: 1.12em;
-        gap: 8px;
-    }
-}
-.searchBlock{
-    max-width: 354px;
-    gap:8px;
-    .searchType{
-        max-width: 101px;
     }
 }
