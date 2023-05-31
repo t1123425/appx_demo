@@ -1,0 +1,15 @@
+.categorySearchWrap{
+    gap: 16px;
+    label{
+        color:var(--textBlueGray);
+        margin-bottom: 6px;
+    }
+    button{
+        padding: 2px 16px;
+        border-radius: 8px;
+        font-size: 1.12em;
+        background-color: var(--mainBgColor);
+        border: 1px solid var(--mainBgColor);
+        color:var(--btnTextColor);
+    }
+}

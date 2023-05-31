@@ -1,8 +1,8 @@
 import styles from './selector.module.scss';
-const Selector = ({dataList,className,defaultValue}) => {
+const Selector = ({dataList,className,styleType,defaultValue}) => {
 
     return (
-        <div className={styles.selectorWrap+' '+styles[className]}>
+        <div className={styles.selectorWrap+' '+styles[styleType]+' '+className}>
              <select defaultValue={defaultValue}>
                 {
                     dataList.map((e,i) => {

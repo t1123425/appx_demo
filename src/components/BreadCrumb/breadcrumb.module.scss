@@ -1,0 +1,29 @@
+.breadCrumbList{
+    li{
+        display: flex;
+        line-height: 30px;
+        a{
+            color:var(--textBlueGray);
+            font-family: NotoSansSC;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+        &::after{
+            content: '';
+            display: inline-block;
+            width:32px;
+            height:30px;
+            background-image: url('../../assets/img/arrowRight.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:last-child{
+            &::after{
+                content: none;
+            }
+            a{
+                color: var(--textBlack);
+            }
+        }
+    }
+}

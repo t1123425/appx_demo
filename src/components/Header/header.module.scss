@@ -7,7 +7,6 @@
     width:100%;
     padding: 33px 25px;
     justify-content: space-between;
-
     @media (max-width: 1024px) {
         .moblieHide{
             display: none;
@@ -35,12 +34,13 @@
     }
 }
 .infoBlock{
-    flex:1;
+    gap:5%;
+}
+.infoBlock,.userBlock{
     justify-content: space-between;
 }
 .userBlock{
-    justify-content: space-between;
-    gap:53px;
+    max-width: 212px;
     span{
       max-width:28px;
     }
@@ -55,10 +55,18 @@
     }
 }
 .weatherBlock{
+    max-width: 295px;
+    flex-wrap: wrap;
     span{
         font-weight: 600;
+        font-size: 1.12em;
+        gap: 8px;
     }
 }
 .searchBlock{
+    max-width: 354px;
     gap:8px;
+    .searchType{
+        max-width: 101px;
+    }
 }

@@ -1,0 +1,15 @@
+.collectionWrap{
+ .collectionInfo{
+    justify-content: space-between;
+ }
+  .title{
+    font-weight: 600;
+    font-size: 1.14em;
+    line-height: 24px;
+  }
+  .collectionContent{
+    height: 40vw;
+    overflow-y: scroll;
+    min-height: 552px;
+  }
+}

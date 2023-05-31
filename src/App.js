@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import SiderBar from "./components/SideBar";
 import { AppContext } from "./context/appContext";
+import BreadCrumb from "./components/BreadCrumb";
+import CategorySearch from "./components/CategorySearch";
+import Collection from "./components/Collection";
 function App() {
   const [toggle, setToggle] = useState(false);
   return (
@@ -11,13 +14,9 @@ function App() {
         <Header />
         <SiderBar />
         <Main>
-            <p>Home</p>
-            <section className="whiteBg">
-              <p>Category</p>
-            </section>
-            <section>
-              <b>My Collection</b>
-            </section>
+            <BreadCrumb />
+            <CategorySearch />
+            <Collection />
         </Main>
       </AppContext.Provider>
     </div>

@@ -2,15 +2,24 @@
 :root{
   --mainBgColor:#F2F2F7;
   --textLightBlack:#11263C;
+  --textBlack:#121212;
   --textBlueGray:#737791;
+  --btnTextColor:#32395F;
   --white:#FFFFFF;
   --selectorBorder:#F2F2F7;
   --selectorBorderGray:#737791;
   --sideBarActive:#D8DDEB;
+  --collectionBorder:#D5D5DA;
+  --collectionBorder_moblie:#E3E3E3;
+  --newsBg:#EDEDED;
 }
 @font-face {
   font-family:'poppins';
   src: url('../assets/fontsFace/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family:'NotoSansSC';
+  src: url('../assets/fontsFace/NotoSansSC-Regular.otf');
 }
 body,html{
   background-color: var(--mainBgColor);
@@ -21,6 +30,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     color: var(--textLightBlack);
+    font-size: 14px;
 }
 #root{
   height: 100%;
@@ -51,3 +61,7 @@ body {
   display: flex;
   align-items: center;
 }
+.flex1{
+  flex:1;
+}
+

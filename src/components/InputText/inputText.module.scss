@@ -11,6 +11,7 @@
         border:0;
         line-height: 27px;
         width: calc(100% - 30px);
+        font-size: 1.12em;
         &::placeholder{
             color:var(--textBlueGray);
         }

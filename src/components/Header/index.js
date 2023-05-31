@@ -14,21 +14,27 @@ const Header = () => {
     return (
         <header className={styles.header}>
           <div className={styles.headerContainer}>
-            <div className={styles.menuBlock+' b-30 flexCenter'}>
+            <div className={styles.menuBlock+' b-30 flexCenter flex1'}>
               <span className={styles.menuBtn} onClick={()=> {setToggle(toggle => !toggle)}}></span>
               <img src={appxLogo} className={styles.logo} alt="appx" /> 
             </div>
-            <div className={styles.infoBlock+' flexCenter'}>
+            <div className={styles.infoBlock+' flexCenter flex1'}>
               <div className={styles.searchBlock+' flexCenter'}>
-                  <InputText placeholder='Search here' className="grayBorder" >
+                  {/* 輸入框 */}
+                  <InputText placeholder='Search here' 
+                             styleType="grayBorder" 
+                             className="flexCenter">
                     <img src={searchIcon} alt="search" />
                   </InputText>
-                  {/* 輸入框
-  右側為下拉式選單，選項包含：By All、By Station、By Country */}
-                  <Selector defaultValue="By All" className={'grayBorder'} dataList={['By All','By Station','By Country']}  />
+                  {/* 
+                    下拉式選單，選項包含：By All、By Station、By Country */}
+                  <Selector defaultValue="By All" 
+                            styleType={'grayBorder'}
+                            className={styles.searchType} 
+                            dataList={['By All','By Station','By Country']} />
               </div>
-              <div className={styles.weatherBlock+' '+styles.moblieHide+' flexCenter'}>
-                <span>
+              <div className={styles.weatherBlock+' '+styles.moblieHide+' flexCenter flex1'}>
+                <span className='flexCenter'>
                   <img src={weatherIcon} alt="weather"/>
                   <b>09:54 am</b>
                 </span>
@@ -36,7 +42,7 @@ const Header = () => {
   地區下拉選單選項包含：Antananarivo、Hongkong、Taipei、Tokyo */}
                 <Selector defaultValue="Antananarivo" dataList={['Antananarivo','Hongkong','Taipei','Tokyo']} />
               </div>
-              <div className={styles.userBlock+' flexCenter'}>
+              <div className={styles.userBlock+' flexCenter flex1'}>
                 <span>
                   <img src={settingIcon} alt="setting" />
                 </span>
