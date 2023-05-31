@@ -45,13 +45,24 @@
       max-width:28px;
     }
     .userAvatar{
-        width:50px;
-        height:50px;
-        border-radius: 25%;
         overflow: hidden;
+        position: relative;
+        &:after{
+            content: "";
+            display: inline-block;
+            width:10px;
+            height: 10px;
+            background-image: url('../../assets/img/arrowDown.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 8px;
+        }
     }
     img{
-        width:100%
+        max-width: 50px;
+        // width:50px;
+        width:100%;
+        border-radius: 25%;
     }
 }
 .weatherBlock{

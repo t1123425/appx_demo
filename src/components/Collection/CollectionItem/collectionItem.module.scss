@@ -1,22 +1,23 @@
 .collectionItemWrap{
     padding: 18px 15px;
     border: 1px solid var(--collectionBorder);
-    // &:before{
-    //     content:"";
-    //     display: inline-block;
-    //     width:13px;
-    //     height:18px;
-    //     background-image: url('../../../assets/img/collectionIcon.svg');
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    // }
     .itemInfo{
+        display: grid;
+        grid-template-columns:13px 1fr 49px;
+        grid-template-areas:'a b c';
+        gap: 22px;
+        margin-bottom: 13.34px;
+        .collectionStatus{
+            grid-area: a;
+        }
         p{
+            grid-area: b;
             font-weight: 500;
             line-height: 24px;
             color:var(--textLightBlack);
         }
         .news{
+            grid-area: c;
             line-height: 18px;
             font-size: 0.8em;
             font-weight: 400;
@@ -29,6 +30,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .itemList{
+            gap: 25.48px;
             li{
                 display: flex;
                 gap:7px;

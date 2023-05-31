@@ -8,14 +8,14 @@ const Collection = () => {
         <section className={styles.collectionWrap}>
             <div className={styles.collectionInfo +' flexCenter'}>
                 <h2 className={styles.title}>My Collection</h2>
-                <div className="pageInfo">
-                    <span className="total">Total 480</span>
-                    <div className="pageSwitcher flexCenter">
+                <div className="pageInfo flexCenter">
+                    <span className={styles.title+' '+styles.total}>Total 480</span>
+                    <div className={styles.pageSwitcher+' flexCenter'}>
                         <span>
                             <img src={arrowLeft}  alt="prev"/>
                         </span>
-                        <div className="pageList whiteBg">
-                            <Selector dataList={[1,2,3,4]} />
+                        <div className={styles.pageList+' whiteBg'}>
+                            <Selector dataList={[1,2,3,4]} className={styles.pageSelector} />
                         </div>
                         <span>
                             <img src={arrowRight}  alt="next"/>

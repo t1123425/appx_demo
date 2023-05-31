@@ -49,7 +49,7 @@ const Header = () => {
                 <span className={styles.moblieHide}>
                   <img src={nofiIcon} alt="nofi" />
                 </span>
-                <div className={styles.userAvatar}>
+                <div className={styles.userAvatar+' flexCenter'}>
                   <img src={avatar} alt="avatar" />
                 </div>
               </div>

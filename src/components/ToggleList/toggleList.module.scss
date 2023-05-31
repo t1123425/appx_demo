@@ -1,0 +1,48 @@
+.toggleListWrap{
+  padding:8px 57px;
+  .toggleList li{
+    margin-bottom: 23px;
+    max-height: fit-content;
+    a{
+        font-weight: 600;
+    }
+  }
+  .childList{
+        height: 0;
+        overflow: hidden;
+        li{
+            &:first-child{
+                margin-top: 23px;
+            }
+            padding-left: 20px;
+            a{
+                line-height: 24px;
+                font-weight: 500;
+                color:var(--sideBarChildLink);
+            }
+        }
+        &.active{
+            height: auto;
+            overflow: auto;
+            li{
+                overflow: auto;
+                max-height: fit-content;
+            }
+        }
+   }
+}
+.toggleTitle{
+   color:var(--textLightBlack);
+   cursor: pointer;
+   font-weight: 600;
+   &:after{
+     content: "";
+     display: inline-block;
+     width:10px;
+     height:10px;
+     background-image: url('../../assets/img/arrowDown.svg');
+     background-position: center;
+     background-repeat: no-repeat;
+     margin-left: 13px;
+   }
+}

@@ -7,7 +7,7 @@ const CollectionItem = ({id}) => {
     return (
         <div className={styles.collectionItemWrap+' whiteBg'}>
             <div className={styles.itemInfo}>
-                <span className='collectionStatus'>
+                <span className={styles.collectionStatus}>
                     <img src={collectionIcon} alt="collection" />
                 </span>
                 <p>APPX System New Version Release Announce on  14th Dec...</p>

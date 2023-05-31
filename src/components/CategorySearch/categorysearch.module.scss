@@ -1,8 +1,13 @@
 .categorySearchWrap{
+    display: flex;
+    align-items: end;
     gap: 16px;
+    padding: 23px 22px;
     label{
+        display: inline-block;
         color:var(--textBlueGray);
         margin-bottom: 6px;
+        line-height: 21px;
     }
     button{
         padding: 2px 16px;
@@ -11,5 +16,8 @@
         background-color: var(--mainBgColor);
         border: 1px solid var(--mainBgColor);
         color:var(--btnTextColor);
+        line-height: 27px;
+        height: 48px;
+        cursor: pointer;
     }
 }

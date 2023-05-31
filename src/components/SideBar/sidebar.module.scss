@@ -4,35 +4,51 @@ $maxWidth:294px;
     width: 100%;
     overflow: hidden;
     transition: all 1s;
-    max-width: 60px;
+    // 縮放前的最大寬度
+    max-width: 108px;
     &.active{
         max-width: $maxWidth;
+        .dropDownList{
+            .listInfo{
+                width: 100%;
+                &:after{
+                    display: inline-block;
+                }
+                &:hover{
+                    background-color:var(--sideBarActive);
+                 }
+            }
+            .infoBox{
+                span{
+                    display: inline-block;
+                }
+            }
+        }
     }
     .dropDownList{
         width:$maxWidth;
         li{
-            // max-height: 57px;
+            max-height: 65px;
             overflow: hidden;
+            margin-bottom: 18px;
             &.active{
-                max-height: auto;
+                max-height: fit-content;
+                overflow: auto;
                 .listInfo{
                     background-color:var(--sideBarActive);
                 }
             }
         }
        .listInfo{
-         width: 100%;
+         width: fit-content;
          display:flex;
          align-items: center;
          justify-content: space-between;
-         padding: 18px 18px 18px 30px;
+         padding: 18px 18px 18px 20px;
          cursor: pointer;
-         &:hover{
-            background-color:var(--sideBarActive);
-         }
          &:after{
             content:"";
-            display:inline-block;
+            display:none;
             width: 10px;
             height:10px;
             background-image: url('../../assets/img/arrowDown.svg');
@@ -43,9 +59,17 @@ $maxWidth:294px;
        .infoBox{
          display: flex;
          gap:0 13px;
-         align-items: flex-start;
+         align-items: center;
+         img{
+            border-radius: 10px;
+            padding: 10px 12px;
+            &:hover{
+                background-color:var(--sideBarActive);
+             }
+         }
+         
          span{
-            display:inline-block;
+            display:none;
             max-width: 185px;
             font-weight: 600;
             font-size: 1.14em;
