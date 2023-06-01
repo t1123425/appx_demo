@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/appx_demo/static/css/main.17668f07.css",
+    "main.js": "/appx_demo/static/js/main.c770286a.js",
+    "static/media/NotoSansSC-Regular.otf": "/appx_demo/static/media/NotoSansSC-Regular.f65097ab05870c1e93a1.otf",
+    "static/media/Poppins-Regular.ttf": "/appx_demo/static/media/Poppins-Regular.4211496d0e075ffe7c2f.ttf",
+    "static/media/appxLogo.svg": "/appx_demo/static/media/appxLogo.1673856376d301f09a9aa78bbe165f08.svg",
+    "static/media/calcularIcon.svg": "/appx_demo/static/media/calcularIcon.73c7b26730e5fed7550b0e94bf4762d5.svg",
+    "static/media/settingIcon.svg": "/appx_demo/static/media/settingIcon.5e27291bd9b046708f6beb3be9b88b17.svg",
+    "static/media/weatherIcon.svg": "/appx_demo/static/media/weatherIcon.2eb5b0d230c931f37f63df8e64209af2.svg",
+    "static/media/commentsIcon.svg": "/appx_demo/static/media/commentsIcon.954c49544ab7a30df19188ff2100ee16.svg",
+    "static/media/marketIcon.svg": "/appx_demo/static/media/marketIcon.b661c31dd9f54a9891a8c81d508caea9.svg",
+    "static/media/carrierIcon.svg": "/appx_demo/static/media/carrierIcon.ec4d19242d27b2e021f883ab00ae47da.svg",
+    "static/media/nofiIcon.svg": "/appx_demo/static/media/nofiIcon.5ab273c0754db53a0bd986bca33b8d89.svg",
+    "static/media/customerIcon.svg": "/appx_demo/static/media/customerIcon.9d6aa0f47471467cf49992502be4ce21.svg",
+    "static/media/homeIcon.svg": "/appx_demo/static/media/homeIcon.d370a75d22fe3b435bfef131c03db6a4.svg",
+    "static/media/cornerUpIcon.svg": "/appx_demo/static/media/cornerUpIcon.3774fe4b27fcb2cce838219f0836db57.svg",
+    "static/media/userIcon.svg": "/appx_demo/static/media/userIcon.17d8130b94af9395894e9eff8f31a930.svg",
+    "static/media/thumbsUpIcon.svg": "/appx_demo/static/media/thumbsUpIcon.be72f712576b9a01e68ccfde2531136b.svg",
+    "static/media/searchIcon.svg": "/appx_demo/static/media/searchIcon.b4947d29ebf88be668224d1d81f02093.svg",
+    "index.html": "/appx_demo/index.html",
+    "static/media/menuBar.svg": "/appx_demo/static/media/menuBar.5de6f14c4a7c077d6d47.svg",
+    "static/media/collectionIcon.svg": "/appx_demo/static/media/collectionIcon.49602ca38a67f56d4b972e00cba2c19a.svg",
+    "static/media/arrowLeft.svg": "/appx_demo/static/media/arrowLeft.98c94a41f743af40b505206bf563393f.svg",
+    "static/media/arrowRight.svg": "/appx_demo/static/media/arrowRight.3cf30337db35ecc1d041a60ae0f6a9f3.svg",
+    "static/media/arrowDown.svg": "/appx_demo/static/media/arrowDown.b30f726daedbfba56233.svg",
+    "main.17668f07.css.map": "/appx_demo/static/css/main.17668f07.css.map",
+    "main.c770286a.js.map": "/appx_demo/static/js/main.c770286a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17668f07.css",
+    "static/js/main.c770286a.js"
+  ]
+}
