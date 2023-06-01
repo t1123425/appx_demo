@@ -1,5 +1,6 @@
 import styles from './toggleList.module.scss'
 import { useState } from 'react'
+// 最下面層級的清單
 const ChildList = ({lists,title}) => {
     const [toggle,setToggle] = useState(false);
     const triggerToggle = (e) => {
@@ -13,7 +14,7 @@ const ChildList = ({lists,title}) => {
                 {
                     lists.map((e,i) => {
                         return <li key={i}>
-                            <a href="#">
+                            <a href="/#">
                                 {e.text}
                             </a>
                         </li>
@@ -23,8 +24,9 @@ const ChildList = ({lists,title}) => {
         </>
     )
 }
+// 子選單
 const ToggleList = () => {
-
+    // 依設計稿呈現的範例資料
     const demoData = [
         {
           id:1,
@@ -61,7 +63,7 @@ const ToggleList = () => {
                                  e.children?<ChildList 
                                             lists={e.children} 
                                             title={e.text}/>:(
-                                    <a href="#">{e.text}</a>)
+                                    <a href="/#">{e.text}</a>)
                                }
                             </li>
                         )

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// 樣式重製reset css
 import "the-new-css-reset/css/reset.css";
 import './style/index.css';
 import App from './App';

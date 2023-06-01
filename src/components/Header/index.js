@@ -10,6 +10,7 @@ import { AppContext } from '../../context/appContext'
 import Selector from '../Selector'
 import InputText from '../InputText'
 const Header = () => {
+  // 設定主選單開合
   const {setToggle} = useContext(AppContext);
     return (
         <header className={styles.header}>

@@ -6,12 +6,12 @@ const CategorySearch = () => {
         <section className={styles.categorySearchWrap+' whiteBg'}>
             {/* category為下拉式選單，選項包含：HR Announcement、News、All
             Subtitle為輸入框 */}
-            <div className="searchBlock">
+            <div className={styles.searchBlock+' '+styles.categroy}>
                 <label>Category</label>
                 <Selector dataList={['HR Announcement',
                 'News','All Subtitle']} />
             </div>
-            <div className="searchBlock">
+            <div className={styles.searchBlock+' '+styles.subtitle}>
                 <label>Subtitle</label>
                 <InputText />
             </div>

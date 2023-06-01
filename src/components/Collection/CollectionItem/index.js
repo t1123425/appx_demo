@@ -3,7 +3,7 @@ import comments from '../../../assets/img/commentsIcon.svg';
 import conrner from '../../../assets/img/cornerUpIcon.svg';
 import collectionIcon from '../../../assets/img/collectionIcon.svg';
 import styles from './collectionItem.module.scss'
-const CollectionItem = ({id}) => {
+const CollectionItem = () => {
     return (
         <div className={styles.collectionItemWrap+' whiteBg'}>
             <div className={styles.itemInfo}>
@@ -28,7 +28,7 @@ const CollectionItem = ({id}) => {
                         <span>5 Shares</span>
                     </li>
                 </ul>
-                <span className='Date'>Dec 19, 2022</span>
+                <span className={styles.date}>Dec 19, 2022</span>
             </div>
         </div>
     )

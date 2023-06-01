@@ -9,7 +9,9 @@ import carrierIcon from '../../assets/img/carrierIcon.svg';
 import financeIcon from '../../assets/img/calcularIcon.svg';
 import userIcon from '../../assets/img/userIcon.svg';
 const SiderBar = () => {
+    // 主選單開闔狀態
     const {toggle,setToggle} = useContext(AppContext);
+    // 選單資料
     const listData = [
         {
             text:'Home General',
@@ -42,7 +44,9 @@ const SiderBar = () => {
             active:false
         }
     ]
+    // 
     const [ListsData,setListData] = useState(listData);
+    // 控制選單收合
     const toggleSideMenu = (index) => {
         setToggle(true);
         setListData(lists => {
@@ -67,6 +71,7 @@ const SiderBar = () => {
                                         <span>{e.text}</span>
                                     </div>
                                 </div>
+                                {/* 子選單 */}
                                 <ToggleList />
                             </li>
                         )
